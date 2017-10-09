@@ -1,10 +1,12 @@
 {
-  "name": "frontend-standard",
+  "name": "client-template",
   "version": "0.0.1",
-  "author": "Ionic Framework",
+  "author": "Colum Bennett <cbennett@redhat.com>",
   "homepage": "http://ionicframework.com/",
   "private": true,
   "scripts": {
+    "docs": "typedoc --out ./docs ./src",
+    "preinstall": "ln -s -f ./custom-hooks/* .git/hooks/",
     "clean": "ionic-app-scripts clean",
     "build": "ionic-app-scripts build",
     "lint": "ionic-app-scripts lint",
@@ -35,7 +37,8 @@
   },
   "devDependencies": {
     "@ionic/app-scripts": "3.0.0",
+    "typedoc": "0.9.0",
     "typescript": "2.3.4"
   },
-  "description": "An Ionic project"
+  "description": "Project Template"
 }
